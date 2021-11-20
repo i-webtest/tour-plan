@@ -699,4 +699,10 @@ template {
     max-height: 70px;
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    max-width: 280px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
