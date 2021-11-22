@@ -37,6 +37,13 @@
     &-info
       &__offer
         margin-left: 15px
+  .slider
+    width: 700px
+  .swiper
+    &-slide
+      &__image
+        height: 100%
+        width: 100%
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -76,14 +83,24 @@
       &__offer
         order: -1
         margin-left: 0
+    &-grid
+      padding-top: 18px
   .stars
     flex-basis: auto
+  .slider
+    width: 100%
+  .swiper
+    height: 356px
+    &-slide
+      &__image
+        height: 100%
+        width: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
 @media (max-width: 480px)
-  .navbar
-    // max-height: 70px
+  .swiper
+    height: 330px
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -104,3 +121,14 @@
     margin-right: 14px
   .offer
     padding: 3px 9px 4px 10px
+  .slider
+    width: 278px
+    &-button
+      width: 10px
+      height: 10px
+      &--prev
+        left: 7px
+      &--next
+        right: 7px
+  .swiper
+    height: 179px
