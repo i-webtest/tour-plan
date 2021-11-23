@@ -669,11 +669,13 @@ template {
 .slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
+  outline: none;
 }
 
 .slider-button--prev {
   left: 16px;
   background-image: url(../img/arrow-prev.svg);
+  outline: none;
 }
 
 .booking {
@@ -801,7 +803,7 @@ template {
   cursor: pointer;
 }
 
-.map {
+#map {
   width: 347px;
   height: 213px;
   border-radius: 10px;
@@ -882,7 +884,7 @@ template {
     width: 340px;
     padding: 28px 22px 26px 23px;
   }
-  .map {
+  #map {
     width: 340px;
   }
   .slider {
@@ -974,7 +976,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  #map {
     width: 100%;
   }
 }
@@ -1038,7 +1040,7 @@ template {
   .booking__num {
     margin-left: 11px;
   }
-  .map {
+  #map {
     height: 173px;
   }
 }
