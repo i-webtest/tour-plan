@@ -669,11 +669,13 @@ template {
 .slider-button--next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
+  outline: none;
 }
 
 .slider-button--prev {
   left: 16px;
   background-image: url(../img/arrow-prev.svg);
+  outline: none;
 }
 
 .booking {
