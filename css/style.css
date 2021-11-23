@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+.booking {
+  font-family: 'Nunito', sans-serif;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -704,7 +708,6 @@ template {
 .booking__start {
   font-weight: normal;
   font-size: 10px;
-  line-height: 14px;
 }
 
 .booking__pricetag {
@@ -717,8 +720,7 @@ template {
 .booking__per-room {
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 12px;
 }
 
 .booking__room {
@@ -878,6 +880,7 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 28px 22px 26px 23px;
   }
   .map {
     width: 340px;
@@ -1006,11 +1009,37 @@ template {
   .hotel-info__offer {
     margin-top: 0;
   }
+  .hotel-right {
+    min-height: 402px;
+  }
   .stars {
     margin-right: 14px;
   }
   .offer {
     padding: 3px 9px 4px 10px;
+  }
+  .slider {
+    width: 278px;
+    height: 170px;
+  }
+  .slider-button {
+    width: 10px;
+    height: 10px;
+  }
+  .slider-button--prev {
+    left: 7px;
+  }
+  .slider-button--next {
+    right: 7px;
+  }
+  .swiper {
+    height: 179px;
+  }
+  .booking__num {
+    margin-left: 11px;
+  }
+  .map {
+    height: 173px;
   }
 }
 /*# sourceMappingURL=style.css.map */
