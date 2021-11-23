@@ -7,10 +7,12 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 
+  
   // Navigation arrows
   navigation: {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
 });
 
