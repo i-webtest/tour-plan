@@ -625,7 +625,7 @@ template {
 .swiper {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -643,6 +643,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -802,15 +803,21 @@ template {
   width: 347px;
   height: 213px;
   border-radius: 10px;
-}
-
-.map-google {
-  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -854,8 +861,29 @@ template {
   .hotel-info__offer {
     margin-left: 15px;
   }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
   .slider {
-    width: 700px;
+    width: 100%;
   }
   .swiper-slide__image {
     height: 100%;
@@ -931,12 +959,19 @@ template {
   }
   .slider {
     width: 100%;
+    height: 350px;
   }
-  .swiper {
-    height: 356px;
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
   }
-  .swiper-slide__image {
-    height: 100%;
+  .booking {
+    width: 100%;
+  }
+  .map {
     width: 100%;
   }
 }
@@ -945,11 +980,11 @@ template {
   .logo {
     width: 99px;
   }
-}
-
-@media (max-width: 480px) {
-  .swiper {
-    height: 330px;
+  .slider {
+    height: 250px;
+  }
+  .hotel-slider {
+    margin-bottom: 20px;
   }
 }
 
@@ -976,22 +1011,6 @@ template {
   }
   .offer {
     padding: 3px 9px 4px 10px;
-  }
-  .slider {
-    width: 278px;
-  }
-  .slider-button {
-    width: 10px;
-    height: 10px;
-  }
-  .slider-button--prev {
-    left: 7px;
-  }
-  .slider-button--next {
-    right: 7px;
-  }
-  .swiper {
-    height: 179px;
   }
 }
 /*# sourceMappingURL=style.css.map */
