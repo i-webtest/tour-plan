@@ -903,6 +903,10 @@ template {
   padding: 20px 18px;
 }
 
+.parallax-window {
+  background: transparent;
+}
+
 .reviews {
   padding: 40px 0 70px 0;
 }
