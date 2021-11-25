@@ -11,6 +11,9 @@
   .reviews
     &-slider
       width: 100%
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -85,6 +88,14 @@
           left: 1px
         &--next
           right: 1px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 339px
+    height: 255px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -171,6 +182,12 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 42px
+  .activities
+    padding-top: 40px
+    padding-bottom: 60px
+  .card
+    width: 48%
+    height: 255px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -196,6 +213,8 @@
         font-size: 30px
         line-height: 38px
         margin-top: 5px
+  .card
+    width: 100%
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -204,6 +223,10 @@
     &-slider
       &__item
         padding: 0 29px 36px 33px
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
 @media (max-width: 320px)
   .container
     max-width: 280px
