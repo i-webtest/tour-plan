@@ -21,7 +21,7 @@ const hotelSlider = new Swiper('.hotel-slider', {
 const reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
-
+  autoHeight: true,
   keyboard: {
     enabled: true,
     onlyInViewport: false,
@@ -33,7 +33,7 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-
+  
 });
 
 

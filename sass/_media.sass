@@ -67,6 +67,10 @@
   .hotel
     &-slider
       width: 100%
+      &__button
+        transform: translateY(-42%)
+        &--prev
+          left: 14px
       &__image
         height: 100%
         width: 100%
@@ -75,6 +79,7 @@
     &-title
       margin: 0
   .reviews
+    padding-bottom: 60px
     &__title
       font-size: 30px
       line-height: 38px
@@ -89,6 +94,7 @@
         &--next
           right: 1px
   .activities
+    padding-top: 57px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -96,6 +102,14 @@
   .card
     width: 339px
     height: 255px
+    &__title
+      margin-bottom: 17px
+      &--golf
+        width: 205px
+      &--sea
+        width: 200px
+    &__button
+      padding: 7px 20px 6px 20px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -213,8 +227,14 @@
         font-size: 30px
         line-height: 38px
         margin-top: 5px
+  .activities
+    padding-top: 39px
+    &__title
+      margin-bottom: 36px
   .card
     width: 100%
+    &__title
+      margin-bottom: 18px
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -279,3 +299,13 @@
     &-slider
       &__text
         text-align: unset
+        line-height: 158%
+  .activities
+    &__card
+      &--golf
+        order: 1
+      &--sea
+        order: 1
+        margin-bottom: 0
+      &--waterfall
+        margin-bottom: 28px
