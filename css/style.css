@@ -399,7 +399,7 @@ template {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 31px 0 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +422,10 @@ template {
 
 .logo {
   width: 177px;
+}
+
+.logo__image {
+  margin-top: 1px;
 }
 
 .search {
@@ -477,6 +481,7 @@ template {
 }
 
 .user__name {
+  margin-top: 1px;
   margin-left: 18px;
   font-size: 14px;
   line-height: 18px;
@@ -508,6 +513,7 @@ template {
 .breadcrumb-list__link {
   text-decoration: none;
   color: inherit;
+  margin-right: 1px;
 }
 
 .hotel {
