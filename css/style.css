@@ -1480,7 +1480,7 @@ template {
     margin-top: 5px;
   }
   .activities {
-    padding-top: 39px;
+    padding-top: 41px;
   }
   .activities__title {
     margin-bottom: 36px;
@@ -1568,7 +1568,6 @@ template {
   }
   .reviews-slider__text {
     text-align: unset;
-    line-height: 158%;
   }
   .activities__card--golf {
     -webkit-box-ordinal-group: 2;
