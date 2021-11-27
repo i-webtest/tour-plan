@@ -843,22 +843,7 @@ template {
   grid-row-gap: 30px;
 }
 
-.packages-offers__horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 364px;
-  padding: 46px 21px 30px 43px;
-  color: #fff;
-}
-
-.packages-offers__vertical {
+.packages-vertical {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -870,6 +855,25 @@ template {
           flex-direction: column;
   padding: 30px 21px 25px 32px;
   color: #fff;
+}
+
+.packages-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 364px;
+  padding: 46px 21px 30px 44px;
+  color: #fff;
+}
+
+.haven {
+  margin-bottom: 37px;
 }
 
 .offers {
@@ -925,9 +929,9 @@ template {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 160.6%;
+  line-height: 158.6%;
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 44px;
 }
 
 .offers-conditions {
@@ -935,6 +939,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  padding-left: 2px;
 }
 
 .offers__address {
@@ -964,11 +969,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
-}
-
-.offers__room-haven {
-  margin-bottom: 37px;
 }
 
 .offers__pricetag {
@@ -983,12 +983,20 @@ template {
           align-items: center;
 }
 
+.offers__pricetag-horizontal {
+  margin-left: 2px;
+}
+
 .offers__price {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-decoration: line-through;
+}
+
+.offers__price-horizontal {
+  margin-left: 2px;
 }
 
 .offers__sale {
@@ -1014,6 +1022,14 @@ template {
 
 .icons {
   margin-right: 14px;
+}
+
+.conditions-horizontal {
+  margin-bottom: 37px;
+}
+
+.conditions-vertical {
+  margin-bottom: 24px;
 }
 
 .newsletter {
