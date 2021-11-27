@@ -18,19 +18,27 @@
     display: flex
     flex-wrap: wrap
     flex-direction: column
-    padding: 30px 21px 25px 32px
+    padding: 28px 21px 25px 32px
     color: $light
   &-horizontal
     display: flex
-    flex-wrap: wrap
+    // flex-wrap: wrap
     flex-direction: column
     max-width: 364px
     padding: 46px 21px 30px 44px
     color: $light
 .haven
   margin-bottom: 37px
+.conditions
+  &-horizontal
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    padding-left: 2px
 .offers
-  min-height: 500px
+  position: relative
+  height: 500px
   border-radius: 8px
   overflow: hidden
   background-color: $dark
@@ -44,7 +52,7 @@
     height: 250px
     object-fit: cover
     &-haven
-      width: 100%
+      width: 366px
       height: 500px
       object-fit: cover
   &-stars
@@ -56,7 +64,14 @@
     font-size: 18px
     line-height: 23px
     margin-top: 0
-    margin-bottom: 27px
+    margin-bottom: 22px
+    &-horizontal
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-top: 0
+      margin-bottom: 27px
   &__description
     &-text
       font-style: normal
@@ -70,7 +85,6 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
-    padding-left: 2px
   &__address
     display: flex
     align-items: center
@@ -113,6 +127,30 @@
     border: none
     border-radius: 4px
     cursor: pointer
+  &-flash
+    position: absolute
+    top: 26px
+    left: 0
+    background-color: $primary
+    color: $light
+    padding: 4px 9px
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 10px
+    border-radius: 0px 4px 4px 0px
+    &-horizontal
+      position: absolute
+      top: 26px
+      left: 0
+      background-color: $primary
+      color: $light
+      padding: 8px 20px 7px 11px
+      font-style: normal
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      border-radius: 0px 4px 4px 0px
 .icons
   margin-right: 14px
 .conditions
