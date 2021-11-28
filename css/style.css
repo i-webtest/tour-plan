@@ -857,6 +857,11 @@ template {
   color: #fff;
 }
 
+.packages-description-horizontal {
+  width: 50%;
+  padding: 46px 21px 30px 44px;
+}
+
 .packages-horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -865,8 +870,7 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 364px;
-  padding: 46px 21px 30px 44px;
+  width: 100%;
   color: #fff;
 }
 
@@ -879,7 +883,8 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  padding-left: 2px;
+  margin-left: 3px;
+  margin-bottom: 37px;
 }
 
 .offers {
@@ -900,6 +905,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 730px;
 }
 
 .offers__image {
@@ -999,7 +1005,7 @@ template {
 }
 
 .offers__pricetag-horizontal {
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .offers__price {
@@ -1011,7 +1017,7 @@ template {
 }
 
 .offers__price-horizontal {
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .offers__sale {
@@ -1063,12 +1069,12 @@ template {
   border-radius: 0px 4px 4px 0px;
 }
 
-.icons {
-  margin-right: 14px;
+.offers .flash-image-horizontal {
+  width: 50%;
 }
 
-.conditions-horizontal {
-  margin-bottom: 37px;
+.icons {
+  margin-right: 14px;
 }
 
 .conditions-vertical {
@@ -1437,8 +1443,7 @@ template {
     -ms-grid-columns: 300px 300px 300px;
         grid-template-columns: 300px 300px 300px;
   }
-  .packages-horizontal {
-    max-width: 315px;
+  .packages-description-horizontal {
     padding: 37px 21px 30px 40px;
   }
   .packages-vertical {
@@ -1612,9 +1617,6 @@ template {
     font-size: 30px;
     line-height: 38px;
   }
-  .packages-horizontal {
-    max-width: 350px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1758,16 +1760,15 @@ template {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .packages-horizontal {
-    max-width: 288px;
-    padding: 24px 21px 30px 24px;
-  }
   .packages-vertical {
     padding: 20px 21px 25px 21px;
   }
   .packages__title {
     font-size: 24px;
     line-height: 30px;
+  }
+  .packages-description-horizontal {
+    padding: 24px 21px 30px 24px;
   }
   .offers {
     height: 435px;
@@ -1835,14 +1836,6 @@ template {
   .card__title {
     margin-bottom: 18px;
   }
-  .packages-wrapper {
-    grid-column-gap: 0px;
-    grid-row-gap: 20px;
-  }
-  .packages-horizontal {
-    max-width: 100%;
-    padding-top: 11px;
-  }
   .offers {
     height: 390px;
     -ms-grid-column: 1;
@@ -1889,7 +1882,18 @@ template {
     width: 100%;
     height: 170px;
   }
+  .flash-image {
+    display: contents;
+  }
+  .packages-wrapper {
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+  }
   .packages-vertical {
+    padding: 18px 21px 25px 21px;
+  }
+  .packages-description-horizontal {
+    width: 100%;
     padding: 18px 21px 25px 21px;
   }
   .conditions-horizontal {
