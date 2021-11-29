@@ -1609,6 +1609,11 @@ template {
   .card__button {
     padding: 7px 20px 6px 20px;
   }
+  .packages-horizontal {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .packages-wrapper {
     -ms-grid-columns: 335px 335px;
         grid-template-columns: 335px 335px;
@@ -1616,6 +1621,12 @@ template {
   .packages__title {
     font-size: 30px;
     line-height: 38px;
+  }
+  .packages-description-horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 21px 25px 32px;
   }
 }
 

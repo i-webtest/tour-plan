@@ -137,11 +137,24 @@
     &__button
       padding: 7px 20px 6px 20px
   .packages
+    &-horizontal
+      justify-content: space-between
     &-wrapper
       grid-template-columns: 335px 335px
     &__title
       font-size: 30px
       line-height: 38px
+    &-description
+      &-horizontal
+        display: flex
+        padding: 20px 21px 25px 32px
+  .offers
+    &__description
+      &-text
+        // margin-bottom: 35px
+  .conditions
+    &-horizontal
+      // margin-bottom: 62px
 @media (max-width: 768px)
   .container
     max-width: 576px
