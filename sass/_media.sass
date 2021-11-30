@@ -40,6 +40,10 @@
       margin-bottom: 30px
     &-vertical
       margin-bottom: 32px
+  .footer
+    &__terms
+      &-info
+        width: 65%
 @media (max-width: 992px)
   .container, .newsletter-wrapper
     max-width: 700px
@@ -121,6 +125,7 @@
           right: 1px
   .activities
     padding-top: 57px
+    padding-bottom: 50px
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -155,6 +160,58 @@
   .conditions
     &-horizontal
       // margin-bottom: 62px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 49px 44px
+      margin-bottom: 57px
+    &__logo
+      width: 96px
+      grid-row: 1
+    &__social
+      &-network
+        grid-row: 1 / 2
+        align-self: center
+        margin-top: 13px
+        margin-left: -13px
+    &__categories
+      grid-row: 2 / 2
+    &__additional
+      width: 260px
+    &__legal
+      width: 202px
+      align-items: flex-start
+      margin-left: -6px
+    &__title
+      &-legal
+        align-self: flex-start
+      &-contact
+        margin-left: 0px
+    &__text
+      margin-left: 0px
+    &__ul
+      &-contact
+        margin: 0 0 0 5px
+    &__contact
+      &-details
+        grid-column: 1 / 4
+        grid-row: 3
+        margin-top: 11px
+      &-form
+        grid-column: span 3
+        margin-top: -14px
+    &__form
+      width: 539px
+    &__input
+      padding: 0 22px
+    &__message
+      padding: 18px 22px
+    &__terms
+      width: 100%
+      &-info
+        width: 100%
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -274,6 +331,17 @@
       line-height: 14px
     &__image
       height: 200px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr 1fr auto
+    &__legal
+      grid-column: 1
+      grid-row: 3
+      margin-left: 0
+    &__contact
+      &-details
+        grid-column: 1 / 3
+        grid-row: 4
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -357,6 +425,53 @@
       margin-bottom: 20px
     &-vertical
       margin-bottom: 25px
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-gap: 30px 0
+      margin-bottom: 30px
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        margin: 0
+    &__form
+      width: 100%
+    &__legal
+      grid-row: 3
+    &__additional
+      grid-row: 4
+    &__categories
+      grid-row: 5
+      margin-bottom: 10px
+    &__contact
+      &-details
+        grid-row: 6
+        margin: 0
+      &-form
+        width: 100%
+        margin: 0
+    &__title
+      &--mb-3
+        margin-bottom: 15px
+    &__input
+      flex-basis: 100%
+    &__message
+      margin-bottom: 15px
+    &__send
+      flex-direction: column-reverse
+      align-items: flex-start
+    &__info
+      margin-bottom: 15px
+    &__terms
+      &-info
+        flex-direction: column
+        align-items: flex-start
+      &-wrap
+        width: 100%
+        margin-bottom: 10px
 @media (max-width: 480px)
   .hotel
     &-slider
@@ -434,3 +549,36 @@
         margin-bottom: 0
       &--waterfall
         margin-bottom: 28px
+  .footer
+    &-wrapper
+      margin-bottom: 26px
+    &__logo
+      width: 96px
+      margin-bottom: 11px
+    &__social
+      &-network
+        flex-wrap: wrap
+      &-links
+        margin-left: 2px
+    &__title
+      &--inline
+        margin-bottom: 22px
+      &-categories
+        margin-bottom: 16px
+      &--mb-3
+        margin-top: 5px
+        margin-bottom: 15px
+    &__legal
+      margin-top: -4px
+    &__additional
+      margin-bottom: 0
+    &__ul
+      margin: 0
+    &__categories
+      margin-bottom: 8px
+    &__item
+      &-map
+        margin-bottom: 20px
+    &__icon
+      &-wrapper
+        min-width: 30px
