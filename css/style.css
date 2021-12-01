@@ -2133,7 +2133,25 @@ template {
     margin-bottom: 27px;
   }
   .navbar-menu__item--mobile_visible-search {
-    margin-bottom: 39px;
+    margin-bottom: 36px;
+  }
+  .navbar-menu__item-deals {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item-hotels {
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item-activities {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item-packages {
+    margin-bottom: 16px;
+  }
+  .navbar-menu__item-restaurants {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item-events {
+    margin-bottom: 17px;
   }
   .navbar__search {
     margin-left: 0;
