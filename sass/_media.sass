@@ -203,7 +203,7 @@
       &-details
         grid-column: 1 / 4
         grid-row: 3
-        margin-top: 15px
+        margin-top: 11px
       &-form
         grid-column: span 3
         margin-top: -14px
@@ -246,17 +246,23 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 74px
       padding-top: 31px
       &--visible
         display: block
     &-menu
       flex-direction: column
+      padding-top: 0
       &__item
         margin-bottom: 20px
         &--mobile
           &_visible
             display: block
+            margin-bottom: 27px
+            &-search
+              margin-bottom: 39px
+    &__search
+      margin-left: 0
   .menu
     &-button
       display: flex
@@ -389,6 +395,10 @@
 @media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &__search
+      width: 85%
+      margin: 0 auto
   .hotel
     &-slider
       height: 250px
@@ -517,6 +527,10 @@
         width: 100%
         margin-bottom: 10px
 @media (max-width: 480px)
+  .navbar
+    &__search
+      width: 80%
+      margin: 0 auto
   .hotel
     &-slider
       height: 200px
@@ -539,6 +553,9 @@
     &-top
       padding-top: 28px
       padding-bottom: 28px
+    &__search
+      width: 72%
+      margin: 0 auto
   .logo
     &__image
       padding-bottom: 2px
@@ -579,7 +596,7 @@
       padding-left: 20px
   .reviews
     &__title
-      margin: 0 auto 42px
+      margin: 0 auto 40px
       width: 245px
     &-slider
       &__text
@@ -602,6 +619,7 @@
     &__social
       &-network
         flex-wrap: wrap
+        margin-bottom: 2px
       &-links
         margin-left: 2px
     &__title
@@ -626,3 +644,13 @@
     &__icon
       &-wrapper
         min-width: 30px
+    &__title
+      &-additional
+        margin-bottom: 13px
+      &-contact
+        margin-bottom: 25px
+    &__contact
+      &-tel
+        display: block
+    &__terms
+      width: 99%
