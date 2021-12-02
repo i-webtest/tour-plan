@@ -12,12 +12,7 @@ $message = $_POST['message'];
 
 // Формирование самого письма
 $title = "New message Best Tour Plan";
-$body = "
-<h2>New message</h2>
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br><br>
-<b>Message:</b><br>$message
-";
+
 
 
 if (isset($email)) {
