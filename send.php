@@ -15,6 +15,7 @@ $title = "New message Best Tour Plan";
 
 
 
+
 if (isset($email)) {
   $body = "
     <h2>New subscription</h2>
@@ -43,13 +44,13 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
   $mail->Username   = 'stasbass80@yandex.ru'; // Логин на почте
-  $mail->Password   = '2503911929'; // Пароль на почте
+  $mail->Password   = 'cfclwlvgcrixtnpe'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('stasbass80@yandex.ru', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('info@iwebtest.ru');
+  $mail->addAddress('stasbass80@gmail.com');
 
 
   // Отправка сообщения
