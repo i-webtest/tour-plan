@@ -11,14 +11,28 @@ $email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "New message Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br>
-<b>Email:</b> $email<br><br>
-<b>Сообщение:</b><br>$message
+<h2>New message</h2>
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br><br>
+<b>Message:</b><br>$message
 ";
+
+
+if (isset($email)) {
+  $body = "
+    <h2>New subscription</h2>
+    <b>Email:</b> $email<br>
+    ";
+} else {
+  $body = "
+    <h2>New message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br><br>
+    <b>Message:</b><br>$message
+    ";
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -47,6 +61,8 @@ try {
   $mail->isHTML(true);
   $mail->Subject = $title;
   $mail->Body = $body;
+
+
 
   // Проверяем отравленность сообщения
   if ($mail->send()) {
