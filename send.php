@@ -42,15 +42,19 @@ try {
   };
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
-  $mail->Username   = 'stasbass80@yandex.ru'; // Логин на почте
-  $mail->Password   = 'cfclwlvgcrixtnpe'; // Пароль на почте
+  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+  $mail->Username   = 'greennecktie@gmail.com'; // Логин на почте
+  $mail->Password   = '50071819'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
-  $mail->setFrom('stasbass80@yandex.ru', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('greennecktie@gmail.com', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('stasbass80@gmail.com');
+  if (!isset($user_email)) {
+    $mail->addAddress('info@iwebtest.ru');
+  } else {
+    $mail->addAddress('info@iwebtest.ru');
+  };
 
 
   // Отправка сообщения
