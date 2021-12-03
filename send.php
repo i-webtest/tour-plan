@@ -44,7 +44,7 @@ try {
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
   $mail->Username   = 'greennecktie@gmail.com'; // Логин на почте
-  $mail->Password   = '50071819'; // Пароль на почте
+  $mail->Password   = 'rqpzxpmqqjqlnnmy'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
   $mail->setFrom('greennecktie@gmail.com', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
@@ -76,4 +76,6 @@ try {
 }
 
 // Отображение результата
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+
 header('Location: thankyou.html');
