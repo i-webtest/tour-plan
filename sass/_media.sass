@@ -217,6 +217,10 @@
       width: 100%
       &-info
         width: 100%
+  .modal
+    &__dialog
+      width: 437px
+      padding: 33px 50px 34px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -539,6 +543,18 @@
       &-wrap
         width: 100%
         margin-bottom: 10px
+  .modal
+    &__input
+      height: 45px
+      margin-bottom: 12px
+    &__dialog
+      width: 400px
+      padding: 33px 40px 34px
+    &__send
+      flex-direction: column-reverse
+      align-items: stretch
+    &__info
+      margin-bottom: 10px
 @media (max-width: 480px)
   .navbar
     &__search
@@ -559,6 +575,9 @@
     &__title
       font-size: 18px
       line-height: 23px
+  .modal
+    &__dialog
+      width: 90%
 @media (max-width: 320px)
   .container
     max-width: 280px
@@ -667,3 +686,6 @@
         display: block
     &__terms
       width: 99%
+  .modal
+    &__dialog
+      padding: 30px 30px 30px
