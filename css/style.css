@@ -1825,7 +1825,7 @@ template {
 
 .modal__dialog {
   position: fixed;
-  top: 60%;
+  top: 50%;
   left: 50%;
   max-width: 478px;
   padding: 33px 88px 34px;
