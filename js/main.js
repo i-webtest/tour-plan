@@ -62,7 +62,6 @@ $(document).ready(function () {
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
   };
-
   
 
   function closeModal(event) {
@@ -82,6 +81,7 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
+  
   
 
 });

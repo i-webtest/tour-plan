@@ -42,12 +42,12 @@ try {
   };
 
   // Настройки вашей почты
-  $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'greennecktie@gmail.com'; // Логин на почте
-  $mail->Password   = 'rqpzxpmqqjqlnnmy'; // Пароль на почте
+  $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
+  $mail->Username   = 'iweb_test@mail.ru'; // Логин на почте
+  $mail->Password   = 'p6Jj9XtfhNZD36rgZtcE'; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
-  $mail->setFrom('greennecktie@gmail.com', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('iweb_test@mail.ru', 'Станислав Грошев'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
   if (!isset($user_email)) {
