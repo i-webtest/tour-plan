@@ -30,7 +30,7 @@ $title = "New message Best Tour Plan";
 //     ";
 // };
 
-if ($name & $email) {
+if ($name & $phone & $email) {
   $body = "
     <h2>New message</h2>
     <b>Name:</b> $name<br>
@@ -38,7 +38,7 @@ if ($name & $email) {
     <b>Email:</b> $email<br><br>
     <b>Message:</b><br>$message
     ";
-} else if ($name & $message) {
+} else if ($name & $phone) {
   $body = "
     <h2>New message</h2>
     <b>Name:</b> $name<br>

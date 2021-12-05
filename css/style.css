@@ -1982,7 +1982,7 @@ template {
     margin-bottom: 32px;
   }
   .footer__contact-form {
-    width: 523px;
+    width: 100%;
   }
   .footer__terms-info {
     width: 65%;
