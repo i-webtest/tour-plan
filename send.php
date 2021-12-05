@@ -16,17 +16,39 @@ $title = "New message Best Tour Plan";
 
 
 
-if (isset($email)) {
+// if (isset($email)) {
+//   $body = "
+//     <h2>New subscription</h2>
+//     <b>Email:</b> $email<br>
+//     ";
+// } else {
+//   $body = "
+//     <h2>New message</h2>
+//     <b>Name:</b> $name<br>
+//     <b>Phone:</b> $phone<br><br>
+//     <b>Message:</b><br>$message
+//     ";
+// };
+
+if ($name & $email) {
   $body = "
-    <h2>New subscription</h2>
-    <b>Email:</b> $email<br>
+    <h2>New message</h2>
+    <b>Name:</b> $name<br>
+    <b>Phone:</b> $phone<br>
+    <b>Email:</b> $email<br><br>
+    <b>Message:</b><br>$message
     ";
-} else {
+} else if ($name & $message) {
   $body = "
     <h2>New message</h2>
     <b>Name:</b> $name<br>
     <b>Phone:</b> $phone<br><br>
     <b>Message:</b><br>$message
+    ";
+} else {
+  $body = "
+    <h2>New subscription</h2>
+    <b>Email:</b> $email<br>
     ";
 };
 
