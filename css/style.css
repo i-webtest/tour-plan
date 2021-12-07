@@ -30,6 +30,20 @@ img {
   line-height: 15px;
 }
 
+a:hover {
+  color: #b8102f;
+  -webkit-transform: translateY(-2);
+          transform: translateY(-2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #b8102f;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
