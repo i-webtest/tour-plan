@@ -1567,9 +1567,6 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2472,6 +2469,9 @@ template {
   .map {
     width: 100%;
   }
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
@@ -2482,6 +2482,9 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .newsletter-title {
+    margin-bottom: 37px;
   }
   .reviews {
     padding: 40px 0 50px 0;

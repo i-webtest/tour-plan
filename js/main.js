@@ -8,7 +8,6 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
 
-
     // Navigation arrows
     navigation: {
       nextEl: '.hotel-slider__button--next',
@@ -22,7 +21,7 @@ $(document).ready(function () {
   const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
-    autoHeight: true,
+    autoHeight: false,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
