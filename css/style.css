@@ -38,7 +38,7 @@ a:hover {
   transition: 0.2s;
 }
 
-button:hover {
+.button:hover {
   background-color: #b8102f;
   -webkit-transition: 0.3s;
   transition: 0.3s;
