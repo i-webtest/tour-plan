@@ -46,15 +46,19 @@ $(document).ready(function () {
   // modal window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
+  
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
   
 
+  
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var overflowHidden = $("body");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    overflowHidden.addClass("lock");
   };
   
 
@@ -62,8 +66,10 @@ $(document).ready(function () {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
+    var overflowHidden = $("body");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    overflowHidden.removeClass("lock");
   };
   
   // Закрытие окна по кнопке ESC
@@ -76,6 +82,12 @@ $(document).ready(function () {
     }
   });
 
+  modalDialog.addEventListener('click', (event) => {
+    if (!event.target.closest('.modal__dialog')) {
+      closeModal();
+    }
+  });
+  
   
   
   // Обработка форм
