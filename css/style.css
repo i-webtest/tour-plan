@@ -980,6 +980,8 @@ template {
   line-height: 158.6%;
   margin-top: 0;
   margin-bottom: 44px;
+  max-height: 155px;
+  overflow: auto;
 }
 
 .offers-conditions {
@@ -1065,6 +1067,7 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  max-width: 200px;
 }
 
 .offers-flash {
@@ -1149,6 +1152,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  max-width: 241px;
 }
 
 .newsletter-title__strong {
@@ -1738,6 +1742,7 @@ template {
 
 .footer__button {
   min-width: 160px;
+  max-width: 350px;
   min-height: 50px;
   padding: 18px 65px 17px 66px;
   font-style: normal;
@@ -2317,6 +2322,12 @@ template {
   .modal__dialog {
     width: 437px;
     padding: 33px 50px 34px;
+  }
+  a:hover {
+    color: inherit;
+  }
+  .button:hover {
+    background-color: #EC1F46;
   }
 }
 

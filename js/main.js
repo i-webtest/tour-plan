@@ -69,8 +69,8 @@ $(document).ready(function () {
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    
   };
+  
   // Закрытие окна по кнопке ESC
   $(document).keydown(function (e) { 
     if (e.keyCode == 27) {
@@ -80,6 +80,8 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
+
+  
   
   // Обработка форм
   $(".form").each(function() {
