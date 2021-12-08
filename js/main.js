@@ -85,6 +85,7 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "Please specify your name",
+          minlength: "Your Name must be at least 2 letters long"
         },
         email: {
           required: "We need your email address to contact you",
@@ -92,6 +93,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Your phone number must be in the format of +7 (xxx) xxx-xx-xx"
         },
       }
     });
