@@ -98,6 +98,9 @@ $(document).ready(function () {
 
   $('.phone').mask('+7 (999) 999-99-99');
 
-  AOS.init();
+  AOS.init({ disable: function() {
+     var maxWidth = 993; 
+     return window.innerWidth < maxWidth; } 
+  });
 });
 
