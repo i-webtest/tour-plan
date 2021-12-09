@@ -16,8 +16,6 @@ $(document).ready(function () {
     effect: "coverflow"
   });
 
-
-
   const reviewsSlider = new Swiper('.reviews-slider', {
     // Optional parameters
     loop: true,
@@ -32,10 +30,7 @@ $(document).ready(function () {
       nextEl: '.reviews-slider__button--next',
       prevEl: '.reviews-slider__button--prev',
     },
-
   });
-
-
 
   // mobile menu
   var menuButton = $(".menu-button");
@@ -46,11 +41,8 @@ $(document).ready(function () {
   // modal window
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
-  
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
-  
-
   
   function openModal() {
     var modalOverlay = $(".modal__overlay");
@@ -60,7 +52,6 @@ $(document).ready(function () {
     modalDialog.addClass("modal__dialog--visible");
     overflowHidden.addClass("lock");
   };
-  
 
   function closeModal(event) {
     event.preventDefault();
@@ -84,7 +75,7 @@ $(document).ready(function () {
     }
   });
 
-  // Обработка форм
+  // Валидация форм
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
@@ -105,9 +96,8 @@ $(document).ready(function () {
     });
   });
 
-
   $('.phone').mask('+7 (999) 999-99-99');
 
+  AOS.init();
 });
 
-AOS.init();
