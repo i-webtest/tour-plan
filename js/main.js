@@ -77,19 +77,13 @@ $(document).ready(function () {
     if (e.keyCode == 27) {
       var modalOverlay = $(".modal__overlay");
       var modalDialog = $(".modal__dialog");
+      var overflowHidden = $("body");
       modalOverlay.removeClass("modal__overlay--visible");
       modalDialog.removeClass("modal__dialog--visible");
+      overflowHidden.removeClass("lock");
     }
   });
 
-  modalDialog.addEventListener('click', (event) => {
-    if (!event.target.closest('.modal__dialog')) {
-      closeModal();
-    }
-  });
-  
-  
-  
   // Обработка форм
   $(".form").each(function() {
     $(this).validate({
@@ -110,6 +104,7 @@ $(document).ready(function () {
       }
     });
   });
+
 
   $('.phone').mask('+7 (999) 999-99-99');
 
